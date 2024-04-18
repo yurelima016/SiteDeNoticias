@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+}
+
+body {
+    max-width: 100vw;
+    max-height: 100vh;
+    background-color: #efefef;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ESTILIZAÇÃO CABEÇALIHO */
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #ffffff;
+}
+
+#logoContainer {
+    width: 35%;
+    height: 100%;
+    padding-left: 2vw;
+}
+
+#logoContainer>a>img {
+    width: 60%;
+    height: 85%;
+}
+
+#searchbarContainer {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchbarContainer>input {
+    width: 80%;
+    height: 55%;
+    padding: 1%;
+
+    outline: none;
+    border: 1px solid #505050;
+    border-radius: 2vw;
+}
+
+#searchbarContainer>input::placeholder {
+    color: #505050;
+}
+
+#searchbarContainer>input:focus {
+    border: 3px solid #0a9efe;
+    border-radius: 2vw;
+}
+
+/*  ESTILIZAÇÃO BARRA DE NAVEGAÇÃO */
+
+nav {
+    width: 100%;
+    height: 5vh;
+    box-shadow: 0px 3px 8px #00000080;
+    margin-bottom: 5vh;
+}
+
+#navbarContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #0a9efe;
+}
+
+#navbarContainer>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+#navbarContainer>ul>li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbarContainer>ul>li>a,
+#navbarContainer>ul>li>a:link,
+#navbarContainer>ul>li>a:visited {
+    color: white;
+    transition: transform .75s;
+}
+
+#navbarContainer>ul>li>a:hover {
+    transform: scale(1.1);
+
+}
+
+/* ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL DA PAGINA */
+
+#section1 {
+    width: 100%;
+    height: 80vh;
+    padding: 1vw;
+}
+
+#mainNewContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#titleDiv {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 1vh;
+}
+
+#titleDiv>h1 {
+    width: 75%;
+    height: 100%;
+    font-size: 2.15rem;
+    color: #151515;
+    display: flex;
+    align-items: center;
+}
+
+#imageDiv {
+    width: 75%;
+    height: 85%;
+}
+
+#imageDiv>img {
+    width: 100%;
+    height: 95%;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#paragraphDiv {
+    width: 25%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#paragraphDiv>p {
+    width: 90%;
+    height: 95%;
+    text-align: justify;
+    font-size: 1.35rem;
+    color: #202020;
+    font-weight: bold;
+}
+
+#intel-redirect,
+#intel-redirect:link,
+#intel-redirect:visited {
+    color: #0a9efe;
+    text-decoration: underline;
+}
+
+#saibaMais-redirect,
+#saibaMais-redirect:link,
+#saibaMais-redirect:visited {
+    color: #202020;
+    text-decoration: underline;
+}
+
+#saibaMais-redirect:hover {
+    color: #0a9efe;
+    text-decoration: underline;
+}
+
+#section2 {
+    width: 100%;
+    height: 50vh;
+    padding: 1vw;
+    margin-top: 7vh;
+}
+
+#otherNewsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#otherNewsContainer>label {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+
+    color: #0a9efe;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#card-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+.news-card {
+    width: 17.5%;
+    height: 100%;
+    background-color: #e9e9e9;
+    border: none;
+    outline: none;
+    border-radius: .75vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: .75%;
+}
+
+.news-card>img {
+    width: 100%;
+    height: 55%;
+    border-radius: .75vw;
+}
+
+.news-card>p {
+    width: 100%;
+    height: 30%;
+    color: #151515;
+    text-align: justify;
+    font-size: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.news-card>div {
+    width: 100%;
+    height: 13.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.news-card>div>button {
+    width: 35%;
+    height: 60%;
+    outline: none;
+    border: none;
+    border-radius: .35vw;
+    background-color: #0a9efe;
+}
+
+.news-card>div>button>a,
+.news-card>div>button>a:link,
+.news-card>div>button>a:visited {
+    color: #ffffff;
+}
+
+/* 
+#card-container>button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 25%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+#goToLeft {
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+#goToRight {
+    position: absolute;
+    top: 45%;
+    right: 0;
+} */
+
+/* ESTILIZAÇÃO DO RODAPÉ */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #0a9efe;
+    border-top: 1vh double #ffffff;
+    margin-top: 5vh;
+}
+
+
+#footerContainer {
+    width: 100%;
+    height: 100%;
+}
+
+#footerContainer>ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color: white;
+}
+
+#footerContainer>ul>li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerContainer>ul>li>a,
+#footerContainer>ul>li>a:link,
+#footerContainer>ul>li>a:visited {
+    color: #fff;
+    transition: transform .75s;
+    position: relative;
+}
+
+#footerContainer>ul>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+
+#footerContainer>ul>li>a:hover::after {
+    width: 100%;
+}
+
+/* STYLE DA PÁGINA DA NOTICIA PRINCIPAL */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#noticia-principal-section {
+    width: 85%;
+    height: 100%;
+}
+
+#titulo-noticia {
+    width: 100%;
+    height: 15vh;
+}
+
+#titulo-noticia>h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 2.75rem;
+    text-align: justify;
+    color: #303030;
+}
+
+#imagem-noticia {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+#imagem-noticia>img {
+    border: none;
+    outline: none;
+    border-radius: .5vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+#texto-noticia {
+    width: 100%;
+    height: auto;
+    text-align: justify;
+}
+
+#paragrafo1,
+#paragrafo2 {
+    font-size: 1.15rem;
+}
+
+#lista-ofertas {
+    width: 100%;
+    height: auto;
+    margin-left: 1.25%;
+}
+
+#lista-ofertas>li>a {
+    font-size: 1.2rem;
+    color: #0b96f2;
+    text-decoration: underline;
+    font-weight: bold;
+}
